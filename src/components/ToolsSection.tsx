@@ -1,37 +1,28 @@
 import { ExternalLink, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
-
 const ToolsSection = () => {
-  const tools = [
-    {
-      name: "Ferramenta IA 1",
-      description: "Soluções avançadas de inteligência artificial",
-      link: "https://tr.ee/RSxYnZz52O",
-    },
-    {
-      name: "Ferramenta IA 2",
-      description: "Plataforma de desenvolvimento com IA",
-      link: "https://tr.ee/hubCGNa8PJ",
-    },
-    {
-      name: "Base44",
-      description: "Infraestrutura e hospedagem",
-      link: "https://base44.com/",
-    },
-    {
-      name: "Hostinger Horizons",
-      description: "Cloud hosting de alta performance",
-      link: "https://www.hostinger.com/br/horizons",
-    },
-    {
-      name: "Google AI Studio",
-      description: "Ferramentas Google para IA",
-      link: "https://aistudio.google.com/apps",
-    },
-  ];
-
-  return (
-    <section className="py-20 relative">
+  const tools = [{
+    name: "Ferramenta IA 1",
+    description: "Soluções avançadas de inteligência artificial",
+    link: "https://tr.ee/RSxYnZz52O"
+  }, {
+    name: "Ferramenta IA 2",
+    description: "Plataforma de desenvolvimento com IA",
+    link: "https://tr.ee/hubCGNa8PJ"
+  }, {
+    name: "Base44",
+    description: "Infraestrutura e hospedagem",
+    link: "https://base44.com/"
+  }, {
+    name: "Hostinger Horizons",
+    description: "Cloud hosting de alta performance",
+    link: "https://www.hostinger.com/br/horizons"
+  }, {
+    name: "Google AI Studio",
+    description: "Ferramentas Google para IA",
+    link: "https://aistudio.google.com/apps"
+  }];
+  return <section className="py-20 relative">
       {/* Background accent */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"></div>
 
@@ -39,10 +30,7 @@ const ToolsSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center space-y-4 mb-16 animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/30 rounded-full">
-              <Sparkles className="h-4 w-4 text-accent" />
-              <span className="text-sm font-medium text-accent">Ferramentas Premium</span>
-            </div>
+            
             <h2 className="text-4xl md:text-5xl font-bold">
               Ferramentas Mais{" "}
               <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
@@ -55,13 +43,12 @@ const ToolsSection = () => {
           </div>
 
           {/* Tools Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            {tools.map((tool, index) => (
-              <div
-                key={index}
-                className="group relative rounded-2xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow overflow-hidden"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up" style={{
+          animationDelay: '0.2s'
+        }}>
+            {tools.map((tool, index) => <div key={index} className="group relative rounded-2xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow overflow-hidden" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 {/* Hover gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 
@@ -85,11 +72,7 @@ const ToolsSection = () => {
                   </div>
 
                   {/* Link overlay */}
-                  <Button
-                    variant="ghost"
-                    onClick={() => window.open(tool.link, '_blank')}
-                    className="w-full justify-between group-hover:bg-primary/10 transition-colors"
-                  >
+                  <Button variant="ghost" onClick={() => window.open(tool.link, '_blank')} className="w-full justify-between group-hover:bg-primary/10 transition-colors">
                     Acessar Ferramenta
                     <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -97,13 +80,10 @@ const ToolsSection = () => {
 
                 {/* Bottom accent line */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-secondary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ToolsSection;

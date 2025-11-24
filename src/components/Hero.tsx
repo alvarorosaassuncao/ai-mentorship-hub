@@ -1,8 +1,6 @@
 import heroImage from "@/assets/hero-image.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-hero">
         <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse"></div>
@@ -11,10 +9,10 @@ const Hero = () => {
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(hsl(199 100% 50% / 0.1) 1px, transparent 1px),
+        backgroundImage: `linear-gradient(hsl(199 100% 50% / 0.1) 1px, transparent 1px),
                            linear-gradient(90deg, hsl(199 100% 50% / 0.1) 1px, transparent 1px)`,
-          backgroundSize: '50px 50px'
-        }}></div>
+        backgroundSize: '50px 50px'
+      }}></div>
       </div>
 
       {/* Content */}
@@ -23,19 +21,19 @@ const Hero = () => {
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="inline-block">
-              <span className="px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-sm text-accent font-medium">
+              <span className="px-4 py-2 border border-accent/30 rounded-full text-sm font-medium text-slate-50 bg-blue-600">
                 Assuncione Inteligência Artificial
               </span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Mentoria com{" "}
-              <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-float">
+              <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text animate-float text-amber-50">
                 Alvaro Assunção
               </span>
             </h1>
             
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-base">
               Alvaro Assunção — Engenheiro de Software com mais de 6 anos de experiência em 
               Desenvolvimento de Sistemas e Análise de Dados.
             </p>
@@ -60,11 +58,7 @@ const Hero = () => {
           <div className="relative animate-scale-in">
             <div className="absolute -inset-4 bg-gradient-secondary rounded-3xl blur-3xl opacity-30 animate-glow-pulse"></div>
             <div className="relative rounded-3xl overflow-hidden border border-accent/20 shadow-glow">
-              <img 
-                src={heroImage} 
-                alt="Alvaro Assunção - Mentor de IA" 
-                className="w-full h-auto"
-              />
+              <img src={heroImage} alt="Alvaro Assunção - Mentor de IA" className="w-full h-auto" />
             </div>
           </div>
         </div>
@@ -76,8 +70,6 @@ const Hero = () => {
           <div className="w-1 h-2 bg-accent rounded-full"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

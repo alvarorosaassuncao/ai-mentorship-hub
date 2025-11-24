@@ -3,12 +3,10 @@ import CTAButtons from "@/components/CTAButtons";
 import TelegramSection from "@/components/TelegramSection";
 import ToolsSection from "@/components/ToolsSection";
 import PlansSection from "@/components/PlansSection";
-
 const Index = () => {
-  return (
-    <main className="min-h-screen bg-background text-foreground">
+  return <main className="min-h-screen bg-background text-foreground">
       <Hero />
-      <CTAButtons />
+      
       <PlansSection />
       <ToolsSection />
       <TelegramSection />
@@ -21,8 +19,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
