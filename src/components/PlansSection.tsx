@@ -11,17 +11,17 @@ const PlansSection = () => {
     name: "Mentoria Individual",
     description: "Ideal para começar sua jornada em IA",
     features: ["Sessões individuais personalizadas", "Acompanhamento de projetos", "Material didático exclusivo", "Suporte via WhatsApp", "Certificado de conclusão"],
-    highlight: false,
-    gradient: "from-primary/10 to-accent/10",
-    iconColor: "text-primary"
+    highlight: true,
+    gradient: "from-accent/10 to-primary/10",
+    iconColor: "text-accent"
   }, {
     icon: Zap,
     name: "Desenvolvimento de Projeto",
     description: "Transforme sua ideia em realidade",
     features: ["Desenvolvimento completo do projeto", "Arquitetura e planejamento", "Implementação com IA", "Testes e otimização", "Documentação técnica", "Deploy e manutenção inicial"],
-    highlight: true,
-    gradient: "from-accent/10 to-primary/10",
-    iconColor: "text-accent"
+    highlight: false,
+    gradient: "from-primary/10 to-accent/10",
+    iconColor: "text-primary"
   }];
   return <section className="py-20 relative overflow-hidden">
       {/* Background elements */}
