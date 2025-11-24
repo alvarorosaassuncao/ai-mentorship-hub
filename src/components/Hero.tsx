@@ -23,26 +23,26 @@ const Hero = () => {
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="inline-block">
-              <span className="px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-sm text-primary font-medium">
-                Mentoria Profissional em IA
+              <span className="px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-sm text-accent font-medium">
+                Assuncione Inteligência Artificial
               </span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Mentoria com{" "}
               <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-float">
-                Alvari Assunção
+                Alvaro Assunção
               </span>
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Alvari Assunção — Engenheiro de Software com mais de 6 anos de experiência em 
+              Alvaro Assunção — Engenheiro de Software com mais de 6 anos de experiência em 
               Desenvolvimento de Sistemas e Análise de Dados.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
                 <span className="text-muted-foreground">Especialista em IA</span>
               </div>
               <div className="flex items-center gap-2">
@@ -58,11 +58,11 @@ const Hero = () => {
 
           {/* Hero Image */}
           <div className="relative animate-scale-in">
-            <div className="absolute -inset-4 bg-gradient-primary rounded-3xl blur-3xl opacity-30 animate-glow-pulse"></div>
-            <div className="relative rounded-3xl overflow-hidden border border-primary/20 shadow-glow">
+            <div className="absolute -inset-4 bg-gradient-secondary rounded-3xl blur-3xl opacity-30 animate-glow-pulse"></div>
+            <div className="relative rounded-3xl overflow-hidden border border-accent/20 shadow-glow">
               <img 
                 src={heroImage} 
-                alt="Alvari Assunção - Mentor de IA" 
+                alt="Alvaro Assunção - Mentor de IA" 
                 className="w-full h-auto"
               />
             </div>
@@ -72,8 +72,8 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-primary rounded-full"></div>
+        <div className="w-6 h-10 border-2 border-accent/50 rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-2 bg-accent rounded-full"></div>
         </div>
       </div>
     </section>
