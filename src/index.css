@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 222 47% 5%;
-    --foreground: 210 100% 98%;
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
 
-    --card: 223 42% 8%;
-    --card-foreground: 210 100% 98%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 223 42% 8%;
-    --popover-foreground: 210 100% 98%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 199 100% 50%;
-    --primary-foreground: 222 47% 5%;
+    --primary: 210 88% 30%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 158 100% 45%;
-    --secondary-foreground: 222 47% 5%;
+    --secondary: 51 95% 48%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 223 30% 15%;
-    --muted-foreground: 210 20% 70%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 199 100% 60%;
-    --accent-foreground: 222 47% 5%;
+    --accent: 51 95% 48%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 100% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 223 30% 20%;
-    --input: 223 30% 15%;
-    --ring: 199 100% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 51 95% 48%;
 
     --radius: 0.75rem;
 
     /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(199 100% 50%), hsl(199 100% 35%));
-    --gradient-secondary: linear-gradient(135deg, hsl(158 100% 45%), hsl(158 80% 35%));
-    --gradient-hero: linear-gradient(180deg, hsl(222 47% 5%) 0%, hsl(223 42% 8%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(223 42% 10%) 0%, hsl(223 42% 8%) 100%);
-    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(199 100% 50% / 0.15), transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(210 88% 30%), hsl(210 88% 20%));
+    --gradient-secondary: linear-gradient(135deg, hsl(51 95% 48%), hsl(51 95% 38%));
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 12%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 14%) 0%, hsl(0 0% 12%) 100%);
+    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(51 95% 48% / 0.15), transparent 70%);
     
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(199 100% 50% / 0.3);
-    --shadow-card: 0 8px 32px hsl(222 47% 5% / 0.5);
+    --shadow-glow: 0 0 40px hsl(51 95% 48% / 0.3);
+    --shadow-card: 0 8px 32px hsl(0 0% 5% / 0.5);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
