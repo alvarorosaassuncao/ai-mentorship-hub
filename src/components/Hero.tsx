@@ -1,34 +1,26 @@
 import heroImage from "@/assets/hero-image.jpg";
+import { BeamsBackground } from "./ui/beams-background";
+import { ParticleTextEffect } from "./ui/particle-text-effect";
+
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-hero">
-        <div className="absolute inset-0 bg-gradient-glow animate-glow-pulse"></div>
-      </div>
-      
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-        backgroundImage: `linear-gradient(hsl(199 100% 50% / 0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, hsl(199 100% 50% / 0.1) 1px, transparent 1px)`,
-        backgroundSize: '50px 50px'
-      }}></div>
-      </div>
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      <BeamsBackground intensity="strong" className="absolute inset-0" />
 
       {/* Content */}
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in-up">
-            <div className="inline-block">
-              <span className="px-4 py-2 border border-accent/30 rounded-full text-sm font-medium text-slate-50 bg-blue-600">
-                Assuncione Inteligência Artificial
-              </span>
+            <div className="flex justify-center lg:justify-start mb-6">
+              <ParticleTextEffect 
+                words={["ASSUNCIONE", "INTELIGÊNCIA", "ARTIFICIAL"]} 
+                className="w-full max-w-3xl"
+              />
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Mentoria com{" "}
-              <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text animate-float text-amber-50">
+              <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-float">
                 Alvaro Assunção
               </span>
             </h1>

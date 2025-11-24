@@ -20,13 +20,13 @@ All colors MUST be HSL.
     --primary: 210 88% 30%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 51 95% 48%;
+    --secondary: 199 100% 50%;
     --secondary-foreground: 0 0% 10%;
 
     --muted: 0 0% 20%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 51 95% 48%;
+    --accent: 199 100% 50%;
     --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,19 +34,19 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 15%;
-    --ring: 51 95% 48%;
+    --ring: 199 100% 50%;
 
     --radius: 0.75rem;
 
     /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 88% 30%), hsl(210 88% 20%));
-    --gradient-secondary: linear-gradient(135deg, hsl(51 95% 48%), hsl(51 95% 38%));
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 12%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 14%) 0%, hsl(0 0% 12%) 100%);
-    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(51 95% 48% / 0.15), transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(210 88% 30%), hsl(199 100% 50%));
+    --gradient-secondary: linear-gradient(135deg, hsl(199 100% 50%), hsl(210 88% 20%));
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 8%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 12%) 0%, hsl(0 0% 8%) 100%);
+    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(199 100% 50% / 0.15), transparent 70%);
     
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(51 95% 48% / 0.3);
+    --shadow-glow: 0 0 40px hsl(199 100% 50% / 0.4);
     --shadow-card: 0 8px 32px hsl(0 0% 5% / 0.5);
     
     /* Animations */
