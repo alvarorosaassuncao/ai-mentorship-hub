@@ -52,31 +52,7 @@ const ToolsSection = () => {
                 {/* Hover gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 
-                <div className="relative p-6 space-y-4">
-                  {/* Icon */}
-                  <div className="flex items-start justify-between">
-                    <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors">
-                      <Sparkles className="h-6 w-6 text-primary" />
-                    </div>
-                    <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
-                  </div>
-
-                  {/* Content */}
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                      {tool.name}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {tool.description}
-                    </p>
-                  </div>
-
-                  {/* Link overlay */}
-                  <Button variant="ghost" onClick={() => window.open(tool.link, '_blank')} className="w-full justify-between group-hover:bg-primary/10 transition-colors">
-                    Acessar Ferramenta
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </div>
+                
 
                 {/* Bottom accent line */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-secondary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
