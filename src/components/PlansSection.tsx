@@ -1,10 +1,8 @@
 import { Check, ArrowRight, Sparkles, Zap, Crown } from "lucide-react";
 import { Button } from "./ui/button";
 const PlansSection = () => {
-  const whatsappNumber = "5532999482095";
-  const openWhatsApp = (planName: string) => {
-    const message = encodeURIComponent(`Quero saber mais sobre o plano: ${planName}`);
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+  const openWhatsApp = () => {
+    window.open('https://wa.me/5532999482095?text=Olá+Álvaro+tudo+bem?+Tenho+interesse+em+saber+mais+sobre+a+sua+mentoria.', '_blank');
   };
   const plans = [{
     icon: Sparkles,
@@ -95,7 +93,7 @@ const PlansSection = () => {
                     </div>
 
                     {/* CTA Button */}
-                    <Button onClick={() => openWhatsApp(plan.name)} className={`w-full group/btn transition-all duration-300 ${plan.highlight ? 'bg-gradient-secondary hover:shadow-glow text-secondary-foreground' : 'bg-gradient-primary hover:shadow-card text-primary-foreground'}`}>
+                    <Button onClick={openWhatsApp} className={`w-full group/btn transition-all duration-300 ${plan.highlight ? 'bg-gradient-secondary hover:shadow-glow text-secondary-foreground' : 'bg-gradient-primary hover:shadow-card text-primary-foreground'}`}>
                       Saiba mais
                       <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
