@@ -22,9 +22,6 @@ const Hero = () => {
 
           {/* Name and Title */}
           <div className="text-center space-y-1">
-            <p className="text-sm text-muted-foreground">
-              gopage.bio/assuncioneiaai
-            </p>
             <h1 className="text-2xl font-bold text-foreground">
               Alvaro Assunção
             </h1>
