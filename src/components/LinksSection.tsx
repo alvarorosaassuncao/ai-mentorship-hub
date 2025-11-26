@@ -40,7 +40,7 @@ const LinksSection = () => {
   };
 
   return (
-    <section className="py-6 relative -mt-32">
+    <section className="py-6 relative">
       <div className="container mx-auto px-4 max-w-md relative z-10">
         <h2 className="text-lg font-bold text-center mb-4 text-foreground uppercase tracking-wide">
           Acesse os Links Abaixo!!!
