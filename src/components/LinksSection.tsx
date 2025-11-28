@@ -29,6 +29,21 @@ const LinksSection = () => {
       title: "Bolt.new",
       url: "https://bolt.new/",
       color: "bg-gradient-to-r from-gray-800 to-black hover:from-gray-900 hover:to-gray-950"
+    },
+    {
+      title: "Perplexity",
+      url: "https://www.perplexity.ai/",
+      color: "bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700"
+    },
+    {
+      title: "Readdy",
+      url: "https://readdy.ai/invite/AavdaAoRuSd5",
+      color: "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
+    },
+    {
+      title: "Excalidraw",
+      url: "https://excalidraw.com/",
+      color: "bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700"
     }
   ];
 
