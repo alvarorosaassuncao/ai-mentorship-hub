@@ -4,6 +4,7 @@ import LinksSection from "@/components/LinksSection";
 import AboutSection from "@/components/AboutSection";
 import PlansSection from "@/components/PlansSection";
 import AnalyticsSection from "@/components/AnalyticsSection";
+import AuthButton from "@/components/AuthButton";
 import { BeamsBackground } from "@/components/ui/beams-background";
 import { MessageCircle } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
@@ -32,6 +33,7 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
       <BeamsBackground intensity="strong" className="fixed inset-0 z-0" />
+      <AuthButton />
       
       <div className="relative z-10">
         <Hero />
