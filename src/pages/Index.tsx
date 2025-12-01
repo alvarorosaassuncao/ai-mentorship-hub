@@ -1,31 +1,11 @@
-import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import LinksSection from "@/components/LinksSection";
 import AboutSection from "@/components/AboutSection";
 import PlansSection from "@/components/PlansSection";
-import AnalyticsSection from "@/components/AnalyticsSection";
-import AuthButton from "@/components/AuthButton";
 import { BeamsBackground } from "@/components/ui/beams-background";
 import { MessageCircle } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
 
 const Index = () => {
-  useEffect(() => {
-    // Track page visit
-    const trackVisit = async () => {
-      try {
-        await supabase.from('page_visits').insert({
-          user_agent: navigator.userAgent,
-          referrer: document.referrer || null
-        });
-      } catch (error) {
-        console.error('Error tracking visit:', error);
-      }
-    };
-    
-    trackVisit();
-  }, []);
-
   const openWhatsApp = () => {
     window.open('https://wa.me/5532999482095?text=Olá+Álvaro+tudo+bem?+Tenho+interesse+em+saber+mais+sobre+a+sua+mentoria.', '_blank');
   };
@@ -33,14 +13,12 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
       <BeamsBackground intensity="strong" className="fixed inset-0 z-0" />
-      <AuthButton />
       
       <div className="relative z-10">
         <Hero />
         <LinksSection />
         <AboutSection />
         <PlansSection />
-        <AnalyticsSection />
         
         {/* Footer */}
         <footer className="py-8 border-t border-border mt-8">
