@@ -44,6 +44,11 @@ const LinksSection = () => {
       title: "Excalidraw",
       url: "https://excalidraw.com/",
       color: "bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700"
+    },
+    {
+      title: "Crie seu minisite comigo",
+      url: "https://wa.me/5532999482095?text=Olá+Álvaro!+Quero+criar+meu+minisite+com+você.",
+      color: "bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700"
     }
   ];
 
