@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      button_clicks: {
+        Row: {
+          button_name: string
+          button_url: string
+          clicked_at: string
+          id: string
+          user_agent: string | null
+        }
+        Insert: {
+          button_name: string
+          button_url: string
+          clicked_at?: string
+          id?: string
+          user_agent?: string | null
+        }
+        Update: {
+          button_name?: string
+          button_url?: string
+          clicked_at?: string
+          id?: string
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
+      page_visits: {
+        Row: {
+          id: string
+          referrer: string | null
+          user_agent: string | null
+          visited_at: string
+        }
+        Insert: {
+          id?: string
+          referrer?: string | null
+          user_agent?: string | null
+          visited_at?: string
+        }
+        Update: {
+          id?: string
+          referrer?: string | null
+          user_agent?: string | null
+          visited_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
