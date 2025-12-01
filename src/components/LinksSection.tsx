@@ -52,7 +52,19 @@ const LinksSection = () => {
     }
   ];
 
-  const openLink = (url: string) => {
+  const openLink = async (url: string, title: string) => {
+    // Track button click
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      await supabase.from('button_clicks').insert({
+        button_name: title,
+        button_url: url,
+        user_agent: navigator.userAgent
+      });
+    } catch (error) {
+      console.error('Error tracking click:', error);
+    }
+    
     window.open(url, '_blank');
   };
 
@@ -67,7 +79,7 @@ const LinksSection = () => {
           {links.map((link, index) => (
             <button
               key={index}
-              onClick={() => openLink(link.url)}
+              onClick={() => openLink(link.url, link.title)}
               className={`w-full ${link.color} rounded-lg p-4 text-center font-semibold text-white transition-all duration-200 hover:scale-[1.02] shadow-lg hover:shadow-xl`}
             >
               {link.title}
