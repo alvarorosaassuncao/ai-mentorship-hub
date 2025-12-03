@@ -37,7 +37,7 @@ const LinksSection = () => {
     color: "bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700"
   }, {
     title: "Crie seu minisite comigo",
-    url: "https://wa.me/5532999482095?text=Ol%C3%A1%20%C3%81lvaro!%20Quero%20criar%20meu%20minisite%20com%20voc%C3%AA.",
+    url: "https://wa.me/5532999482095?text=Olá+Álvaro+tudo+bem?+Tenho+interesse+em+saber+mais+sobre+a+sua+mentoria.",
     color: "bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700"
   }];
   const openLink = (url: string) => {
