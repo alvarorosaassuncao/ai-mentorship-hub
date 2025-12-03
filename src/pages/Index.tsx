@@ -7,7 +7,7 @@ import { MessageCircle } from "lucide-react";
 
 const Index = () => {
   const openWhatsApp = () => {
-    window.open('https://wa.me/5532999482095?text=Olá+Álvaro+tudo+bem?+Tenho+interesse+em+saber+mais+sobre+a+sua+mentoria.', '_blank');
+    window.open('https://wa.me/5532999482095?text=Ol%C3%A1%20%C3%81lvaro%20tudo%20bem%3F%20Tenho%20interesse%20em%20saber%20mais%20sobre%20a%20sua%20mentoria.', '_blank');
   };
 
   return (
